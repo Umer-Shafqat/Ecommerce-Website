@@ -10,7 +10,7 @@ function Navbar() {
          <img src={assests.logo_1} alt="Navbar logo"/>
       </div>
     
-    </div>
+         </div>
     </>
   );
 }
