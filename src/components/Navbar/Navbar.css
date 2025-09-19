@@ -1,12 +1,42 @@
-.navbar-container{
-  background-color: #003A52;
-  color:wheat;
-  height: 6vw;
-  width: 100%;
+.navbar-container {
+  display: flex;          
+  align-items: center;    
+  justify-content: space-between; 
+  padding: 10px 20px;
+  background-color:#003A52; 
 }
 
-.navbar-img img{
-  padding-left: 20px;
-  padding-top: 10px;
-   height: 55px;
+.navbar-img img {
+  height: 40px;
 }
+
+.delivery {
+  display: flex;
+  flex-direction: column;   /* stack para-1 above, location below */
+  align-items: flex-start;
+  color: white;
+}
+
+.para-1 {
+  margin: 0;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.location {
+  display: flex;
+  align-items: center;   /* icon + Pakistan in same line */
+  gap: 6px;              /* spacing between icon & text */
+}
+
+.location-img {
+  width: 16px;
+  height: 16px;
+}
+
+.para-2 {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 600;
+}
+
