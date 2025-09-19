@@ -1,0 +1,12 @@
+.navbar-container{
+  background-color: #003A52;
+  color:wheat;
+  height: 6vw;
+  width: 100%;
+}
+
+.navbar-img img{
+  padding-left: 20px;
+  padding-top: 10px;
+   height: 55px;
+}
