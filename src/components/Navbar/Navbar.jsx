@@ -18,7 +18,30 @@ function Navbar() {
       <p className='para-2'>Pakistan</p>
       </div>
     </div>
-         </div>
+
+   <div className="search-bar">
+  <input type="text" placeholder="Search products..." className="search-input"/>
+  <img className="search-icon" src={assests.search_icon} alt="search"/>
+</div>
+
+
+<div className="signin">
+  <span><p>Hello,Sign in</p></span>
+</div>
+
+<div className="returns">
+  <span><p>Returns</p></span>
+  <span><p>& Orders</p></span>
+</div>
+
+<div className="cart">
+ <img className="cart_icon" src={assests.cart_icon} alt="cart"/>
+ <span><p className='cart-name'>Cart</p></span>
+</div>
+
+
+</div>
+
     </>
   );
 }

@@ -15,6 +15,12 @@
   flex-direction: column;   /* stack para-1 above, location below */
   align-items: flex-start;
   color: white;
+  border:none;
+}
+
+.delivery:hover{
+ border:1.5px solid white;
+ cursor: pointer;
 }
 
 .para-1 {
@@ -39,4 +45,75 @@
   font-size: 14px;
   font-weight: 600;
 }
+
+.search-bar {
+  display: flex;
+  align-items: center;     /* keeps input & icon aligned */
+  width: 100%;
+  max-width: 500px;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  overflow: hidden;        /* keeps borders smooth */
+}
+
+.search-input {
+  flex: 1;                 /* take full space */
+  height: 35px;            /* match height with icon */
+  border: none;
+  padding: 0 10px;
+  font-size: 14px;
+  outline: none;
+}
+
+.search-icon {
+  background: white;      
+  padding: 8px;
+  height: 35px;           
+  width: 40px;             
+  cursor: pointer;
+}
+
+.signin{
+  color: white;
+  border: none;
+}
+
+.signin:hover{
+   border:2px solid white;
+   cursor: pointer;
+}
+
+.returns{
+  color: white;
+  border: none;
+}
+
+.returns:hover{
+  border:2px solid white;
+}
+
+.cart {
+  display: flex;
+  align-items: center;
+  gap: 6px;   /* less space between icon and text */
+  cursor: pointer;
+  border:none;
+}
+
+.cart:hover{
+  border: 2px solid white;
+}
+.cart_icon {
+  width: 30px;   /* smaller size */
+  height: 30px;
+}
+
+.cart-name {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 500;
+  color: white;
+}
+
+
 
