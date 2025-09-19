@@ -1,4 +1,27 @@
-.navbar1-container{
+.navbar1-container {
     background-color: #601e06;
     height: 4vw;
+}
+
+.paraforpanel {
+  width: 100%;
+  background: #601E06;
+  color:wheat;
+  overflow: hidden;
+  white-space: nowrap;
+  padding: 10px 0;
+  font-size: 18px;
+  font-family: Arial, sans-serif;
+  position: relative;
+}
+
+.paraforpanel p {
+  display: inline-block;
+  padding-left: 100%; 
+  animation: scroll-text 12s linear infinite;
+}
+
+@keyframes scroll-text {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-100%); }
 }
