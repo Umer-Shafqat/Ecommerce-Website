@@ -17,7 +17,7 @@
   flex-direction: column;
   justify-content: space-between;
   text-align: left;
-  color: white;
+  color: wheat;
   min-height: 350px;   
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
