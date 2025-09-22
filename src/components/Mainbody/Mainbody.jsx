@@ -4,6 +4,7 @@ import "./Mainbody.css";
 
 
 function MainBody() {
+  
   return (
     <div className="mainbody">
       {item_list.map((item) => (
