@@ -1,33 +1,40 @@
-import React from 'react'
-import './Displayitems.css'
-import { display_items } from '../../assests/assests'
+import React from "react";
+import "./Displayitems.css";
+import { display_items } from "../../assests/assests";
 
-const Exploremenu = ({ category, setCategory }) => {
-  // Get unique categories from display_items
-  const categories = [...new Set(display_items.map(item => item.category))];
+const DisplayItems = ({ category, setCategory }) => {
+  const filteredItems = display_items.filter(
+    (item) => item.category === category
+  );
 
   return (
-    <div className='explore-menu' id='explore-menu'>
-      <div className="explore-menu-list">
-        {categories.map((cat, index) => (
-          <div
-            onClick={() => setCategory(prev => prev === cat ? "All" : cat)}
-            key={index}
-            className='explore-menu-list-item'
-          >
-            {/* You can replace with a representative image per category if you want */}
-          <img
-  className={category === cat ? "active" : ""}
-  src={display_items.find(item => item.category === cat)?.image || ""}
-  alt={cat}
-/>
-            <p>{cat}</p>
-          </div>
-        ))}
-      </div>
-      <hr />
-    </div>
-  )
-}
+    <div className="display-items">
+      <h2 className="display-header">{category}</h2>
 
-export default Exploremenu;
+      {/* Back button */}
+      <button className="back-btn" onClick={() => setCategory("All")}>
+        ⬅ Back to Categories
+      </button>
+
+      {filteredItems.length > 0 ? (
+        <div className="items-grid">
+          {filteredItems.map((item) => (
+            <div className="display-item" key={item._id}>
+              <img src={item.image} alt={item.name} className="item-img" />
+              {item.discount && (
+                <p className="discount">{item.discount}% off • Limited Deal Time</p>
+              )}
+              <h3 className="item-name">{item.name}</h3>
+              {item.rating && <p className="item-rating">⭐ {item.rating} / 5</p>}
+              <p className="item-price">${item.price}</p>
+            </div>
+          ))}
+        </div>
+      ) : (
+        <p>No items found for this category.</p>
+      )}
+    </div>
+  );
+};
+
+export default DisplayItems;
