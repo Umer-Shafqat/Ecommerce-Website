@@ -11,6 +11,7 @@ function Navbar1() {
     </div>
     <div className="mainbody-pic">
         <img src={assests.mainpic} alt="Main pic"/>
+       
     </div>
   </div>
   </>

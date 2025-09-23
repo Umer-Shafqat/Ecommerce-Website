@@ -11,11 +11,6 @@ const DisplayItems = ({ category, setCategory }) => {
     <div className="display-items">
       <h2 className="display-header">{category}</h2>
 
-      {/* Back button */}
-      <button className="back-btn" onClick={() => setCategory("All")}>
-        ⬅ Back to Categories
-      </button>
-
       {filteredItems.length > 0 ? (
         <div className="items-grid">
           {filteredItems.map((item) => (
@@ -33,6 +28,9 @@ const DisplayItems = ({ category, setCategory }) => {
       ) : (
         <p>No items found for this category.</p>
       )}
+       <button className="back-btn" onClick={() => setCategory("All")}>
+        ⬅ Back to Categories
+      </button>
     </div>
   );
 };

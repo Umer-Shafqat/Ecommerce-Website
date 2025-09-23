@@ -1,4 +1,3 @@
-import React from "react";
 import { item_list } from "../../assests/assests";
 import "./Mainbody.css";
 
