@@ -11,8 +11,6 @@ import box5 from './box5.jpg'
 import box6 from './box6.jpg'
 import box7 from './box7.jpeg'
 import box8 from './box8.jpg'
-import airpod from './airpod.jpg'
-import applemac from './apple mac.jpg'
 import appliance1 from './appliance1.webp'
 import appliance2 from './appliance2.webp'
 import appliance3 from './appliance3.webp'
@@ -39,10 +37,8 @@ import book9 from './book9.webp'
 import book10 from './book10.webp'
 import brush from './brush.webp'
 import candle from './candle.webp'
-import chair from './chair.webp'
-import chapal from './chapal.jpg'
-import chickenmate from './chickenmatewebp'
-import chickenshredder from './chickenshredder'
+import chickenmate from './chickenmate.webp'
+import chickenshredder from './chickenshredder.webp'
 import coffee from './coffee.webp'
 import decor1 from './decor1.webp'
 import decor2 from './decor2.webp'
@@ -50,13 +46,12 @@ import decor3 from './decor3.webp'
 import decor4 from './decor4.webp'
 import decor5 from './decor5.webp'
 import decor6 from './decor6.webp'
-import decor7 from './decor7.webp'
-import decor8 from './decor8.webp'
-import decor9 from './decor9.webp'
-import decor10 from './decor10.webp'
+import decor7 from './decor7.jpg'
+import decor8 from './decor8.jpg'
+import decor9 from './decor9.jpg'
+import decor10 from './decor10.jpg'
 import digitalthermo from './digitalthermo.webp'
 import DNA from './DNA.webp'
-import dropper from './dropper.webp'
 import echodot from './echodot.webp'
 import fan from './fan.webp'
 import food from './food.webp'
@@ -71,7 +66,6 @@ import gaming7 from './gaming7.webp'
 import gaming8 from './gaming8.webp'
 import gaming9 from './gaming9.webp'
 import gaming10 from './gaming10.webp'
-import inflator from './inflator.webp'
 import laptop1 from './laptop1.webp'
 import laptop2 from './laptop2.webp'
 import laptop3 from './laptop3.webp'
@@ -82,27 +76,21 @@ import laptop7 from './laptop7.webp'
 import laptop8 from './laptop8.webp'
 import laptop9 from './laptop9.webp'
 import laptop10 from './laptop10.webp'
-import legmassage from './legmassage.webp'
 import legmassager from './legmassager.jpg'
 import lushion from './lushion.jpg'
-import mackup from './mackup.jpg'
 import manshirt1 from './manshirt1.webp'
 import manshirt2 from './manshirt2.webp'
 import manshirt3 from './manshirt3.webp'
 import manshirt4 from './manshirt4.webp'
 import manshirt5 from './manshirt5.webp'
-import mirror from './mirror.webp'
-import mobilepic from './mobilepic.jpg'
 import mouthwasher from './mouthwasher.webp'
 import neck from './neck.webp'
 import papertowel from './papertowel.webp'
 import repair from './repair.jpg'
-import sleepyhead from './sleepyhead.webp'
-import Tshirt from './T-shirt.jpg'
 import veken from './veken.webp'
 import women1 from './women1.webp'
 import women2 from './women2.webp'
-import zelusbelt from './zelus belt.jpg'
+
 
 export const assests = {
   logo_1,
@@ -163,14 +151,16 @@ export const display_items =[
         price: 15.99,
         description: "Mouthwash Travel Size,Alcohol & Fluoride Free Fresh mouth.",
         category: "Health & Personal Care", 
-  },  {
+  },  
+  {
         _id:"5",
         name : "Digital Thermometer",
         image : digitalthermo,
         price: 15.99,
         description: "Digital Thermometer for Adults and Kids, Forehead No-Touch Thermometer with Fever Alarm.",
         category: "Health & Personal Care", 
-  },  {
+  },  
+  {
         _id:"6",
         name : "Heating Pad",
         image : neck,
@@ -193,537 +183,582 @@ export const display_items =[
         price: 15.99,
         description: "Intensive Repair Serum, 15%Hyaluronic Acid for Sensitive Skin Anti Aging Ultra Hydrating Serum for Face Calming Barrier Repair Redness Relief with Ceramides Centella 30Vials Daily Travel Care.",
         category: "Health & Personal Care", 
-  },  {
+  },  
+  {
         _id:"9",
         name : "Greek Salad",
         image : legmassager,
         price: 15.99,
         description: "Leg Massager with Heat and Air Compression, Foot Calf & Thigh Massage for Circulation and Pain Relief, Sequential Compression Device for Swollen Legs, 3 Intensities 6 Modes - FSA HSA Eligible",
         category: "Health & Personal Care", 
-  },  {
+  },  
+  {
         _id:"10",
         name : "Toothbrushes",
         image : brush,
         price: 15.99,
         description: "Cleaings® Mini Brushes-Disposable Toothbrushes with Toothpaste and Pick for Work or Travel, 24 Count (Mint Flavor（Pack of 1）).",
         category: "Health & Personal Care", 
-  },  {
+  },  
+  {
         _id:"11",
         name : "Veken Rustproof & Waterproof Shower",
         image : veken,
         price: 15.99,
         description: "Veken Rustproof & Waterproof Shower Caddy 6-Pack, No Drilling Adhesive Shelves Rack.",
         category: "Refresh your space", 
-  },  {
+  },
+    {
         _id:"12",
         name : "Chicken Shredder",
         image : chickenshredder,
         price: 15.99,
         description: "Chicken Shredder Tool Twist for Kitchen, Manual Chicken Breast Grinder Machine.",
         category: "Refresh your space", 
-  },  {
+  },
+    {
         _id:"13",
         name : "Ceiling Fans",
         image : fan,
         price: 15.99,
         description: "Ceiling Fans with Lights, 52 Inch Black Ceiling Fan with Light and Remote 3 Color 6 Speed Adjustable.",
         category: "Refresh your space", 
-  },  {
+  },
+    {
         _id:"14",
         name : "Amazon Echo Dot",
         image : echodot,
         price: 15.99,
         description: "Amazon Echo Dot (newest model), Vibrant sounding Alexa speaker, Deep Sea Blue.",
         category: "Refresh your space", 
-  },  {
+  }, 
+   {
         _id:"15",
         name : "Paper Towel Holder",
         image : papertowel,
         price: 15.99,
         description: "Paper Towel Holder - Self-Adhesive or Drilling,Upgraded Aluminum Kitchen Roll Dispenser.",
         category: "Refresh your space", 
-  },  {
+  }, 
+   {
         _id:"16",
         name : "StepRite Kitchen Mats",
         image : chickenmate,
         price: 15.99,
         description: "StepRite Kitchen Mats, 2PCS Kitchen Rugs, Cushioned Anti Fatigue Kitchen Mats for Floor.",
         category: "Refresh your space", 
-  },  {
+  }, 
+  
+  {
         _id:"17",
         name : "K-Cup Pod Coffee",
         image : coffee,
         price: 15.99,
         description: "Keurig K-Mini Single Serve K-Cup Pod Coffee Maker, 6 to 12oz Brew size.",
         category: "Refresh your space", 
-  },  {
+  },
+    {
         _id:"18",
         name : " Bullet Blender",
         image : blender,
         price: 15.99,
         description: "Magic Bullet Blender, Small, Silver, 11 Piece Set.",
         category: "Refresh your space", 
-  },  {
+  },
+    {
         _id:"19",
         name : "Food Kitchen",
         image : food,
         price: 15.99,
         description: "Etekcity Food Kitchen Scale, Digital Grams and Ounces for Weight Loss, Baking, Cooking, Keto and Meal Prep",
         category: "Refresh your space", 
-  },  {
+  },
+    {
         _id:"20",
         name : "Mini Brushes-Disposable",
         image : candle,
         price: 15.99,
         description: "Hand-poured soy wax candle with calming essential oils for a clean, long-lasting burn. Perfect for creating a cozy, relaxing atmosphere in any room.",
         category: "Refresh your space", 
-  },  {
+  },
+    {
         _id:"21",
         name : "The Fallen and the Kiss of Dusk (Crowns of Nyaxia Book 4)",
         image : book1,
         price: 15.99,
         description: "The Fallen and the Kiss of Dusk (Crowns of Nyaxia Book 4)",
         category: "Books", 
-  },  {
+  },
+    {
         _id:"22",
         name : "The First Witch of Boston: A Novel .",
         image : book2,
         price: 15.99,
         description: "The First Witch of Boston: A Novel.",
         category: "Books", 
-  },  {
+  },
+    {
         _id:"23",
         name : "One Nation Always Under God: Profiles in Christian Courage",
         image : book3,
         price: 15.99,
         description: "One Nation Always Under God: Profiles in Christian Courage",
         category: "Books", 
-  },  {
+  },
+    {
         _id:"24",
         name : "The Night Before Kindergarten",
         image : book4,
         price: 15.99,
         description: "The Night Before Kindergarten",
         category: "Books", 
-  },  {
+  }, 
+   {
         _id:"25",
         name : "Reckoning Hour (Dean Lincoln Legal Thriller Book 1)",
         image : book5,
         price: 15.99,
         description: "Reckoning Hour (Dean Lincoln Legal Thriller Book 1)",
         category: "Books", 
-  },  {
+  },
+    {
         _id:"26",
         name : "The Boomerang: A Thriller.",
         image : book6,
         price: 15.99,
         description: "The Boomerang: A Thriller.",
         category: "Books", 
-  },  {
+  },
+    {
         _id:"27",
         name : "Abscond: A Short Story",
         image : book7,
         price: 15.99,
         description: "Abscond: A Short Story",
         category: "Books", 
-  },  {
+  },
+    {
         _id:"28",
         name : "James (Pulitzer Prize Winner): A Novel",
         image : book8,
         price: 15.99,
         description: "James (Pulitzer Prize Winner): A Novel.",
         category: "Books", 
-  },,  {
+  },
+    {
         _id:"29",
         name : "The Let Them Theory: A Life-Changing Tool That Millions of People Can't Stop Talking About",
         image : book9,
         price: 15.99,
         description: "The Let Them Theory: A Life-Changing Tool That Millions of People Can't Stop Talking About",
         category: "Books", 
-  },  {
+  },
+    {
         _id:"30",
         name : "The Idaho Four: An American Tragedy",
         image : book10,
         price: 15.99,
         description: "The Idaho Four: An American Tragedy.",
         category: "Books", 
-  },  {
+  },
+    {
         _id:"31",
-        name : "Greek Salad",
-        image : food_1,
+        name : " Mens Polo Shirts",
+        image : manshirt1,
         price: 15.99,
-        description: "A refreshing salad with tomatoes, cucumbers, olives, feta cheese, and a tangy vinaigrette.",
-        category: "salad", 
-  },  {
+        description: "PJ PAUL JONES Mens Polo Shirts Regular Fit Textured V-Neck Knit Golf Polos",
+        category: "Shop Fashion for trend", 
+  },
+    {
         _id:"32",
-        name : "Greek Salad",
-        image : food_1,
+        name : "Mens Casual Polo",
+        image : manshirt2,
         price: 15.99,
-        description: "A refreshing salad with tomatoes, cucumbers, olives, feta cheese, and a tangy vinaigrette.",
-        category: "salad", 
-  },  {
+        description: "JMIERR Mens Casual Polo Shirt Summer Short Sleeve Vacation Button Beach Knit Stretchy Golf Shirts",
+        category: "Shop Fashion for trend", 
+  },
+    {
         _id:"33",
-        name : "Greek Salad",
-        image : food_1,
+        name : "Mens Sweat Shorts",
+        image : manshirt3,
         price: 15.99,
-        description: "A refreshing salad with tomatoes, cucumbers, olives, feta cheese, and a tangy vinaigrette.",
-        category: "salad", 
-  },  {
+        description: "JMIERR Mens Sweat Shorts Casual Stretch Elastic Waist Waffle Workout Gym Short 7 inch Inseam Running Shots.",
+        category: "Shop Fashion for trend", 
+  }, 
+   {
         _id:"34",
-        name : "Greek Salad",
-        image : food_1,
+        name : "Men's Track Suits",
+        image : manshirt4,
         price: 15.99,
-        description: "A refreshing salad with tomatoes, cucumbers, olives, feta cheese, and a tangy vinaigrette.",
-        category: "salad", 
-  },  {
+        description: "Vssjavun Men's Track Suits 2 Piece Outfits Casual Short Sleeve Shirt and Shorts Set Sweatsuit Summer Tracksuit",
+        category: "Shop Fashion for trend", 
+  },
+    {
         _id:"35",
-        name : "Greek Salad",
-        image : food_1,
+        name : "Womens Two Piece Outfits Sweater",
+        image : women1,
         price: 15.99,
-        description: "A refreshing salad with tomatoes, cucumbers, olives, feta cheese, and a tangy vinaigrette.",
-        category: "salad", 
-  },  {
+        description: "PRETTYGARDEN Womens Two Piece Outfits Sweater Sets Knit Pullover Tops And High Waisted Pants Matching Track Suits Set.",
+        category: "Shop Fashion for trend", 
+  },
+    {
         _id:"36",
-        name : "Greek Salad",
-        image : food_1,
+        name : "ATHMILE Women's Puff Short Sleeve",
+        image : women2,
         price: 15.99,
-        description: "A refreshing salad with tomatoes, cucumbers, olives, feta cheese, and a tangy vinaigrette.",
-        category: "salad", 
-  },  {
+        description: "ATHMILE Women's Puff Short Sleeve Sweater Tops 2025 Spring Summer Fall Trendy Casual T Shirts Blouses.",
+        category: "Shop Fashion for trend", 
+  },
+    {
         _id:"37",
-        name : "Greek Salad",
-        image : food_1,
+        name : "Baby Girl Boy Sweater",
+        image : baby1,
         price: 15.99,
-        description: "A refreshing salad with tomatoes, cucumbers, olives, feta cheese, and a tangy vinaigrette.",
-        category: "salad", 
-  },  {
+        description: "FYBITBO Baby Girl Boy Sweater Knit Oversized Pullover Sweatshirt Romper Onesie Warm Fall Winter Clothes Outfit Newborn.",
+        category: "Shop Fashion for trend", 
+  },
+    {
         _id:"38",
-        name : "Greek Salad",
-        image : food_1,
+        name : "Solid Color Baby Long Sleeve",
+        image : baby2,
         price: 15.99,
-        description: "A refreshing salad with tomatoes, cucumbers, olives, feta cheese, and a tangy vinaigrette.",
-        category: "salad", 
-  },  {
+        description: "Lovely Solid Color Baby Long Sleeve Jumpsuit baby girl bodysuit",
+        category: "Shop Fashion for trend", 
+  },
+    {
         _id:"39",
-        name : "Greek Salad",
-        image : food_1,
+        name : "Winter Knit Baby Hat ",
+        image : baby3,
         price: 15.99,
-        description: "A refreshing salad with tomatoes, cucumbers, olives, feta cheese, and a tangy vinaigrette.",
-        category: "salad", 
-  },  {
+        description: "JANGANNSA Winter Knit Baby Hat Twist Warm Beanie for Boys Girls Infant Toddler Baby Beanie with Pompom.",
+        category: "Shop Fashion for trend", 
+  },
+    {
         _id:"40",
-        name : "Greek Salad",
-        image : food_1,
+        name : "Sweater Mens",
+        image : manshirt5,
         price: 15.99,
-        description: "A refreshing salad with tomatoes, cucumbers, olives, feta cheese, and a tangy vinaigrette.",
-        category: "salad", 
-  },  {
-        _id:"1",
-        name : "Greek Salad",
-        image : food_1,
+        description: "GURUNVANI Patchwork Sweater Mens Colorblock Jumper Cable Knitted Pullover Oversized.",
+        category: "Shop Fashion for trend", 
+  },
+    {
+        _id:"41",
+        name : "Paris Hilton Air Fryer",
+        image : appliance1,
         price: 15.99,
-        description: "A refreshing salad with tomatoes, cucumbers, olives, feta cheese, and a tangy vinaigrette.",
-        category: "salad", 
-  },  {
-        _id:"1",
-        name : "Greek Salad",
-        image : food_1,
+        description: "Paris Hilton Air Fryer, Large 6-Quart Capacity, Nonstick Made without PFAS, Touchscreen Display, 8-in-1.",
+        category: "Appliance", 
+  },
+    {
+        _id:"42",
+        name : "Mini Electric Can Opener",
+        image : appliance2,
         price: 15.99,
-        description: "A refreshing salad with tomatoes, cucumbers, olives, feta cheese, and a tangy vinaigrette.",
-        category: "salad", 
-  },  {
-        _id:"1",
-        name : "Greek Salad",
-        image : food_1,
+        description: "Kitchen Mama Mini Electric Can Opener Smooth Edge: Opens Can with One Press.",
+        category: "Appliance", 
+  },
+    {
+        _id:"43",
+        name : "Vegetable Chopper and Spiralizer",
+        image : appliance3,
         price: 15.99,
-        description: "A refreshing salad with tomatoes, cucumbers, olives, feta cheese, and a tangy vinaigrette.",
-        category: "salad", 
-  },  {
-        _id:"1",
-        name : "Greek Salad",
-        image : food_1,
+        description: "Fullstar The Original Pro Chopper - Vegetable Chopper and Spiralizer, Food Chopper with Container,",
+        category: "Appliance", 
+  },
+    {
+        _id:"44",
+        name : "portable steam cleaner for tile",
+        image : appliance4,
         price: 15.99,
-        description: "A refreshing salad with tomatoes, cucumbers, olives, feta cheese, and a tangy vinaigrette.",
-        category: "salad", 
-  },  {
-        _id:"1",
-        name : "Greek Salad",
-        image : food_1,
+        description: "BISSELL® Steam Shot™ OmniReach handheld portable steam cleaner for tile,fabric steaming tool,includes 10.",
+        category: "Appliance", 
+  },
+    {
+        _id:"45",
+        name : " Electric Sandwich Maker",
+        image : appliance5,
         price: 15.99,
-        description: "A refreshing salad with tomatoes, cucumbers, olives, feta cheese, and a tangy vinaigrette.",
-        category: "salad", 
-  },  {
-        _id:"1",
-        name : "Greek Salad",
-        image : food_1,
+        description: "OVENTE Electric Sandwich Maker with Non-Stick Plates, Indicator Lights, Cool Touch Handle, Easy to Clean and Store.",
+        category: "Appliance", 
+  },
+    {
+        _id:"46",
+        name : "Electric Griddle with Warming Tray",
+        image : appliance6,
         price: 15.99,
-        description: "A refreshing salad with tomatoes, cucumbers, olives, feta cheese, and a tangy vinaigrette.",
-        category: "salad", 
-  },  {
-        _id:"1",
-        name : "Greek Salad",
-        image : food_1,
+        description: "bella Electric Griddle with Warming Tray - Smokeless Indoor Grill, Copper/Black",
+        category: "Appliance", 
+  }, 
+   {
+        _id:"47",
+        name : "Smart Scale for Body Weight",
+        image : appliance7,
         price: 15.99,
-        description: "A refreshing salad with tomatoes, cucumbers, olives, feta cheese, and a tangy vinaigrette.",
-        category: "salad", 
-  },  {
-        _id:"1",
-        name : "Greek Salad",
-        image : food_1,
+        description: "Etekcity Smart Scale for Body Weight, Bathroom Digital Weighing Scale with BMI, Body Fat.",
+        category: "Appliance", 
+  },
+    {
+        _id:"48",
+        name : "Vakumar Liquid Vacuum Sealer Machine",
+        image :appliance8,
         price: 15.99,
-        description: "A refreshing salad with tomatoes, cucumbers, olives, feta cheese, and a tangy vinaigrette.",
-        category: "salad", 
-  },  {
-        _id:"1",
-        name : "Greek Salad",
-        image : food_1,
+        description: "Vakumar Liquid Vacuum Sealer Machine, 90Kpa Vacuum Sealer Machine Preservation Dry/Moist/Liquid Modes, LED Indicator Light.",
+        category: "Appliance", 
+  },
+    {
+        _id:"49",
+        name : "Ninja Fit Compact Personal Blender",
+        image : appliance9,
         price: 15.99,
-        description: "A refreshing salad with tomatoes, cucumbers, olives, feta cheese, and a tangy vinaigrette.",
-        category: "salad", 
-  },  {
-        _id:"1",
-        name : "Greek Salad",
-        image : food_1,
+        description: "Ninja Fit Compact Personal Blender,700-Watt Base, (2) 16-oz. Cups and Spout Lids, Black QB3001SS.",
+        category: "Appliance", 
+  },
+    {
+        _id:"50",
+        name : "Cord Organizer for Appliances",
+        image : appliance10,
         price: 15.99,
-        description: "A refreshing salad with tomatoes, cucumbers, olives, feta cheese, and a tangy vinaigrette.",
-        category: "salad", 
-  },  {
-        _id:"1",
-        name : "Greek Salad",
-        image : food_1,
+        description: "Cord Organizer for Appliances, 4PCS Kitchen Appliance Cord Winder Cable Organizer.",
+        category: "Appliance", 
+  },
+    {
+        _id:"51",
+        name : "Nintendo Switch™ ",
+        image : gaming1,
         price: 15.99,
-        description: "A refreshing salad with tomatoes, cucumbers, olives, feta cheese, and a tangy vinaigrette.",
-        category: "salad", 
-  },  {
-        _id:"1",
-        name : "Greek Salad",
-        image : food_1,
+        description: "Nintendo Switch™ with Neon Blue and Neon Red Joy‑Con™.",
+        category: "Gaming", 
+  },
+    {
+        _id:"52",
+        name : "Meta Quest",
+        image : gaming2,
         price: 15.99,
-        description: "A refreshing salad with tomatoes, cucumbers, olives, feta cheese, and a tangy vinaigrette.",
-        category: "salad", 
-  },  {
-        _id:"1",
-        name : "Greek Salad",
-        image : food_1,
+        description: "Meta Quest 2 128GB - Advanced All-in-One Virtual Reality Headset (Renewed).",
+        category: "Gaming", 
+  },
+    {
+        _id:"53",
+        name : "Xbox",
+        image : gaming3,
         price: 15.99,
-        description: "A refreshing salad with tomatoes, cucumbers, olives, feta cheese, and a tangy vinaigrette.",
-        category: "salad", 
-  },  {
-        _id:"1",
-        name : "Greek Salad",
-        image : food_1,
+        description: "Xbox One S 1TB All-Digital Console with Xbox One Wireless Controller (Renewed).",
+        category: "Gaming", 
+  },
+    {
+        _id:"54",
+        name : " Gaming Headset for PC",
+        image : gaming4,
         price: 15.99,
-        description: "A refreshing salad with tomatoes, cucumbers, olives, feta cheese, and a tangy vinaigrette.",
-        category: "salad", 
-  },  {
-        _id:"1",
-        name : "Greek Salad",
-        image : food_1,
+        description: "2.4GHz Wireless Gaming Headset for PC, Ps5, Ps4 - Lossless Audio USB & Type-C Ultra Stable Gaming Headphone.",
+        category: "Gaming", 
+  },
+    {
+        _id:"55",
+        name : "GGaming Keyboard and Mouse and Mouse pad and Gaming Headset",
+        image : gaming5,
         price: 15.99,
-        description: "A refreshing salad with tomatoes, cucumbers, olives, feta cheese, and a tangy vinaigrette.",
-        category: "salad", 
-  },  {
-        _id:"1",
-        name : "Greek Salad",
-        image : food_1,
+        description: "Gaming Keyboard and Mouse and Mouse pad and Gaming Headset, Wired LED and PS4 Users - 4 in 1 Edition Hornet RX-250.",
+        category: "Gaming", 
+  },
+    {
+        _id:"56",
+        name : "Gaming Keyboard ",
+        image : gaming6,
         price: 15.99,
-        description: "A refreshing salad with tomatoes, cucumbers, olives, feta cheese, and a tangy vinaigrette.",
-        category: "salad", 
-  },  {
-        _id:"1",
-        name : "Greek Salad",
-        image : food_1,
+        description: "AULA F2088 Typewriter Style Mechanical Gaming Keyboard Blue Switches,Rainbow LED Backlit.",
+        category: "Gaming", 
+  },
+    {
+        _id:"57",
+        name : "Gaming Mouse",
+        image : gaming7,
         price: 15.99,
-        description: "A refreshing salad with tomatoes, cucumbers, olives, feta cheese, and a tangy vinaigrette.",
-        category: "salad", 
-  },  {
-        _id:"1",
-        name : "Greek Salad",
-        image : food_1,
+        description: "Redragon Gaming Mouse, MMO Mouse Gaming UP 12400 DPI, 19 Macro Programmable Buttons.",
+        category: "Gaming", 
+  }, 
+   {
+        _id:"58",
+        name : "Gaming Chair",
+        image : gaming8,
         price: 15.99,
-        description: "A refreshing salad with tomatoes, cucumbers, olives, feta cheese, and a tangy vinaigrette.",
-        category: "salad", 
-  },  {
-        _id:"1",
-        name : "Greek Salad",
-        image : food_1,
+        description: "Gaming Chair,Ergonomic Massage Computer Office Desk Chair with Footrest,Pocket Spring Cushion,Reclining Leather Adjustable Gamer Chair with Headrest and Lumbar Support,Purple",
+        category: "Gaming", 
+  },
+    {
+        _id:"59",
+        name : "PlayStation 4",
+        image : gaming9,
         price: 15.99,
-        description: "A refreshing salad with tomatoes, cucumbers, olives, feta cheese, and a tangy vinaigrette.",
-        category: "salad", 
-  },  {
-        _id:"1",
-        name : "Greek Salad",
-        image : food_1,
+        description: "Sony PlayStation 4 Console 1TB - Black (Renewed).",
+        category: "Gaming", 
+  },
+    {
+        _id:"60",
+        name : "Gamer Novelty Funny T Shirt.",
+        image : gaming10,
         price: 15.99,
-        description: "A refreshing salad with tomatoes, cucumbers, olives, feta cheese, and a tangy vinaigrette.",
-        category: "salad", 
-  },  {
-        _id:"1",
-        name : "Greek Salad",
-        image : food_1,
+        description: "I Paused My Game to Be Here Graphic Tees Men Gaming Gamer Novelty Funny T Shirt.",
+        category: "Gaming", 
+  },
+    {
+        _id:"61",
+        name : "15.6 Inch Laptop",
+        image : laptop1,
         price: 15.99,
-        description: "A refreshing salad with tomatoes, cucumbers, olives, feta cheese, and a tangy vinaigrette.",
-        category: "salad", 
-  },  {
-        _id:"1",
-        name : "Greek Salad",
-        image : food_1,
+        description: "15.6 Inch Laptop, Win 11 Laptop Computer with 16GB RAM 1TB SSD, 6500mAh.",
+        category: "Laptop", 
+  },
+    {
+        _id:"62",
+        name : "THEYETI 2 in 1 Laptop Convertible",
+        image : laptop2,
         price: 15.99,
-        description: "A refreshing salad with tomatoes, cucumbers, olives, feta cheese, and a tangy vinaigrette.",
-        category: "salad", 
-  },  {
-        _id:"1",
-        name : "Greek Salad",
-        image : food_1,
+        description: "THEYETI 2 in 1 Laptop Convertible 15.6 Inch (16GB RAM, 1TB SSD), i3-1215U 6-Core Processor(Up to 4.4Ghz).",
+        category: "Laptop", 
+  },
+    {
+        _id:"63",
+        name : "Lenovo Laptop Bag ",
+        image : laptop3,
         price: 15.99,
-        description: "A refreshing salad with tomatoes, cucumbers, olives, feta cheese, and a tangy vinaigrette.",
-        category: "salad", 
-  },  {
-        _id:"1",
-        name : "Greek Salad",
-        image : food_1,
+        description: "Lenovo Laptop Bag T210, Messenger Shoulder Bag for Laptop or Tablet, Sleek, Durable & Water-Repellent Fabric.",
+        category: "Laptop", 
+  },
+    {
+        _id:"64",
+        name : "Laptop Tray",
+        image : laptop4,
         price: 15.99,
-        description: "A refreshing salad with tomatoes, cucumbers, olives, feta cheese, and a tangy vinaigrette.",
-        category: "salad", 
-  },  {
-        _id:"1",
-        name : "Greek Salad",
-        image : food_1,
+        description: "Laptop Tray - Lap Tray with Cushion, Laptop Table for Bed & Sofa, Adjustable Lap Desk, Ergonomic Wooden Stand .",
+        category: "Laptop", 
+  }, 
+   {
+        _id:"65",
+        name : "HP Stream 14 HD BrightView Laptop",
+        image : laptop5,
         price: 15.99,
-        description: "A refreshing salad with tomatoes, cucumbers, olives, feta cheese, and a tangy vinaigrette.",
-        category: "salad", 
-  },  {
-        _id:"1",
-        name : "Greek Salad",
-        image : food_1,
+        description: "HP Stream 14 HD BrightView Laptop, Intel Celeron N4120, 16GB RAM, 288GB Storage.",
+        category: "Laptop", 
+  },
+    {
+        _id:"66",
+        name : "2 in 1 Laptop Computers Windows 11",
+        image : laptop6,
         price: 15.99,
-        description: "A refreshing salad with tomatoes, cucumbers, olives, feta cheese, and a tangy vinaigrette.",
-        category: "salad", 
-  },  {
-        _id:"1",
-        name : "Greek Salad",
-        image : food_1,
+        description: "2 in 1 Laptop Computers Windows 11, 11.6 inch Touchscreen Laptop Tablet, 4GB RAM 256 GB SSD.",
+        category: "Laptop", 
+  },
+    {
+        _id:"67",
+        name : "Waterproof Leather Laptop",
+        image : laptop7,
         price: 15.99,
-        description: "A refreshing salad with tomatoes, cucumbers, olives, feta cheese, and a tangy vinaigrette.",
-        category: "salad", 
-  },  {
-        _id:"1",
-        name : "Greek Salad",
-        image : food_1,
+        description: "Leather Mens Messenger Bag Vintage 15.6 Inch Waterproof Leather Laptop Briefcase Satchel Shoulder Bag Computer Laptop Bag Coffee.",
+        category: "Laptop", 
+  },
+    {
+        _id:"68",
+        name : "ASUS Chromebook C203XA ",
+        image : laptop8,
         price: 15.99,
-        description: "A refreshing salad with tomatoes, cucumbers, olives, feta cheese, and a tangy vinaigrette.",
-        category: "salad", 
-  },  {
-        _id:"1",
-        name : "Greek Salad",
-        image : food_1,
+        description: "ASUS Chromebook C203XA Rugged & Spill Resistant Laptop, 11.6 HD, 180 Degree, MediaTek Quad-Core Processor.",
+        category: "Laptop", 
+  },
+    {
+        _id:"69",
+        name : "PC Mac Phone",
+        image : laptop9,
         price: 15.99,
-        description: "A refreshing salad with tomatoes, cucumbers, olives, feta cheese, and a tangy vinaigrette.",
-        category: "salad", 
-  },  {
-        _id:"1",
-        name : "Greek Salad",
-        image : food_1,
+        description: "WGK Portable Monitor Narrow Edge 17.3” 1080P FHD 144Hz USB-C HDMI Gaming PC IPS HDR Screen for Travel PC Mac Phone Xbox PS5 Switch Laptop with Smart Cover and Built-in Speakers.",
+        category: "Laptop", 
+  },
+    {
+        _id:"70",
+        name : "Unisex Laptop Tote Backpack",
+        image : laptop10,
         price: 15.99,
-        description: "A refreshing salad with tomatoes, cucumbers, olives, feta cheese, and a tangy vinaigrette.",
-        category: "salad", 
-  },  {
-        _id:"1",
-        name : "Greek Salad",
-        image : food_1,
+        description: "Unisex Laptop Tote Backpack Convertible Lightweight Durable Stylish Everyday Shoulder Tote bag Backpack with Water Bottle Pocket Work Travel, Black.",
+        category: "Laptop", 
+  }, 
+   {
+        _id:"71",
+        name : "Welcome Porch Sign Decor Wooden",
+        image : decor1,
         price: 15.99,
-        description: "A refreshing salad with tomatoes, cucumbers, olives, feta cheese, and a tangy vinaigrette.",
-        category: "salad", 
-  },  {
-        _id:"1",
-        name : "Greek Salad",
-        image : food_1,
+        description: "Welcome Porch Sign Decor Wooden Hanging Sign Door Porch Standing Decorative Signs Plaques for Front Door.",
+        category: "Warm & welcoming decor", 
+  }, 
+   {
+        _id:"72",
+        name : "3 Pcs Mason Jar",
+        image : decor2,
         price: 15.99,
-        description: "A refreshing salad with tomatoes, cucumbers, olives, feta cheese, and a tangy vinaigrette.",
-        category: "salad", 
-  },  {
-        _id:"1",
-        name : "Greek Salad",
-        image : food_1,
+        description: "3 Pcs Mason Jar Centerpiece Table Decorations for Dining Table Coffee Table Decor with Wood Tray.",
+        category: "Warm & welcoming decor", 
+  },
+    {
+        _id:"73",
+        name : "Trap Door Indoor and Outdoor",
+        image : decor3,
         price: 15.99,
-        description: "A refreshing salad with tomatoes, cucumbers, olives, feta cheese, and a tangy vinaigrette.",
-        category: "salad", 
-  },  {
-        _id:"1",
-        name : "Greek Salad",
-        image : food_1,
+        description: "Bestcustom Definitely Not A Trap Door Indoor and Outdoor (Indoor & Outdoor 24x16).",
+        category: "Warm & welcoming decor", 
+  },
+    {
+        _id:"74",
+        name : "Boho Tassel Garland Western Decor",
+        image : decor4,
         price: 15.99,
-        description: "A refreshing salad with tomatoes, cucumbers, olives, feta cheese, and a tangy vinaigrette.",
-        category: "salad", 
-  },  {
-        _id:"1",
-        name : "Greek Salad",
-        image : food_1,
+        description: "Boho Tassel Garland Western Decor Terracotta Rainbow Tassel for Graduation Back to School Home Nursery Decorations.",
+        category: "Warm & welcoming decor", 
+  },
+    {
+        _id:"75",
+        name : "Large Wall Clock",
+        image : decor5,
         price: 15.99,
-        description: "A refreshing salad with tomatoes, cucumbers, olives, feta cheese, and a tangy vinaigrette.",
-        category: "salad", 
-  },  {
-        _id:"1",
-        name : "Greek Salad",
-        image : food_1,
+        description: "Large Wall Clock –30 Inch Farmhouse Clock -Extra Large 30 Inch Wood and Metal Wall Clock.",
+        category: "Warm & welcoming decor", 
+  },
+    {
+        _id:"76",
+        name : "Personalized Teacher Door Sign",
+        image : decor6,
         price: 15.99,
-        description: "A refreshing salad with tomatoes, cucumbers, olives, feta cheese, and a tangy vinaigrette.",
-        category: "salad", 
-  },  {
-        _id:"1",
-        name : "Greek Salad",
-        image : food_1,
+        description: "Personalized Teacher Door Sign in This Classroom You are Teacher Door Signs Classroom Welcome Wreath Personalized Teacher Wall Decor Sign Back To School Gifts for Teachers Must have.",
+        category: "Warm & welcoming decor", 
+  },
+    {
+        _id:"77",
+        name : "CLXEAST 30 Inch Large Wall Clock Modern",
+        image : decor7,
         price: 15.99,
-        description: "A refreshing salad with tomatoes, cucumbers, olives, feta cheese, and a tangy vinaigrette.",
-        category: "salad", 
-  },  {
-        _id:"1",
-        name : "Greek Salad",
-        image : food_1,
+        description: "CLXEAST 30 Inch Large Wall Clock Modern, Oversized Roman Numeral Decorative Black Metal Wall Clock for Living Room Decor,House Warming Gifts New Home.",
+        category: "Warm & welcoming decor", 
+  },
+    {
+        _id:"78",
+        name : "Antique Tower 30 inch Large Roman Numeral Wall Clock",
+        image : decor8,
         price: 15.99,
-        description: "A refreshing salad with tomatoes, cucumbers, olives, feta cheese, and a tangy vinaigrette.",
-        category: "salad", 
-  },  {
-        _id:"1",
-        name : "Greek Salad",
-        image : food_1,
+        description: "Antique Tower 30 inch Large Roman Numeral Wall Clock, Indoor Outdoor Patio Waterproof Oversized Decorative Contemporary Clock, Antique Black Metal Wall Clock Battery Operated Retro Art Hanging Clock.",
+        category: "Warm & welcoming decor", 
+  },
+    {
+        _id:"79",
+        name : "Wall Clock,Large Gold Decorative Clock for Living Room",
+        image : decor9,
         price: 15.99,
-        description: "A refreshing salad with tomatoes, cucumbers, olives, feta cheese, and a tangy vinaigrette.",
-        category: "salad", 
-  },  {
-        _id:"1",
-        name : "Greek Salad",
-        image : food_1,
+        description: "Wall Clock,Large Gold Decorative Clock for Living Room,Silent Non Ticking Clock with Pendulum,Battery Operated Oversized Modern Wall Art for Bedroom,Farmhouse,Office Wall Decor / 27.9 * 16.5 Inch.",
+        category: "Warm & welcoming decor", 
+  },
+    {
+        _id:"80",
+        name : "CLXEAST 24 Inch Wall Clock",
+        image : decor10,
         price: 15.99,
-        description: "A refreshing salad with tomatoes, cucumbers, olives, feta cheese, and a tangy vinaigrette.",
-        category: "salad", 
-  },  {
-        _id:"1",
-        name : "Greek Salad",
-        image : food_1,
-        price: 15.99,
-        description: "A refreshing salad with tomatoes, cucumbers, olives, feta cheese, and a tangy vinaigrette.",
-        category: "salad", 
-  },  {
-        _id:"1",
-        name : "Greek Salad",
-        image : food_1,
-        price: 15.99,
-        description: "A refreshing salad with tomatoes, cucumbers, olives, feta cheese, and a tangy vinaigrette.",
-        category: "salad", 
-  },  {
-        _id:"1",
-        name : "Greek Salad",
-        image : food_1,
-        price: 15.99,
-        description: "A refreshing salad with tomatoes, cucumbers, olives, feta cheese, and a tangy vinaigrette.",
-        category: "salad", 
-  },  {
-        _id:"1",
-        name : "Greek Salad",
-        image : food_1,
-        price: 15.99,
-        description: "A refreshing salad with tomatoes, cucumbers, olives, feta cheese, and a tangy vinaigrette.",
-        category: "salad", 
+        description: "CLXEAST 24 Inch Wall Clock with Moving Gears,Oversized Large Industrial Steampunk Clock, Antique Gold Metal Roman Numeral Wall Clocks for Farmhouse Living Room Decor.",
+        category: "Warm & welcoming decor", 
   }
 ]

@@ -1,10 +1,7 @@
-import React from "react";
 import { item_list } from "../../assests/assests";
 import "./Mainbody.css";
 
-
 function MainBody() {
-  
   return (
     <div className="mainbody">
       {item_list.map((item) => (
