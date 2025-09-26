@@ -28,9 +28,7 @@ const DisplayItems = ({ category, setCategory }) => {
       ) : (
         <p>No items found for this category.</p>
       )}
-       <button className="back-btn" onClick={() => setCategory("All")}>
-        ⬅ Back to Categories
-      </button>
+    
     </div>
   );
 };

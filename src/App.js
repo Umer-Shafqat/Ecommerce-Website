@@ -3,6 +3,7 @@ import Navbar from "./components/Navbar/Navbar";
 import Navbar1 from "./components/Navbar1/Navbar1";
 import MainBody from "./components/Mainbody/Mainbody";
 import DisplayItems from "./components/Displayitems/Displayitems";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   const [category, setCategory] = useState("All");
@@ -17,6 +18,8 @@ function App() {
       ) : (
         <DisplayItems category={category} setCategory={setCategory} />
       )}
+    <Footer></Footer>
+
     </>
   );
 }

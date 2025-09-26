@@ -1,0 +1,169 @@
+.footer{
+  margin-top: 15px;
+ }
+
+ .footer-panel1{
+  background-color:#006A60;
+  color: #601E06;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.85rem;
+ }
+ .footer-panel2{
+  background-color: #003A52;
+  color: white;
+  height: 300px;
+  display: flex;
+  justify-content: space-evenly;
+ }
+
+ ul{
+  margin-top: 20px;
+ }
+
+ ul a {
+  display: block;
+  font-size: 0.85rem;
+  margin-top: 10px;
+  color: white;
+ }
+
+ .footer-panel3{
+  background-color:  #222f3d ;
+  border-top: 0.5px solid white;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ }
+
+ .image {
+     height: 100%;
+     width: 150px;
+     background-size: cover;
+ }
+
+ .footer-panel4{
+  background-color:#0f1111 ;
+  color: white;
+  height: 80px;
+ }
+ .footer-pages{
+     font-size: 0.7rem;
+     text-align: center;
+      padding-top: 25px;
+ }
+
+ .copy-right{
+      font-size: 0.7rem;
+      text-align: center;
+      padding-top: 5px;
+ }
+
+ 
+.about{
+  font-size: larger;
+  color:wheat;
+}
+#about{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 15px;
+  width: 200px;
+}
+.about:hover{
+  text-decoration: underline;
+  cursor: alias;
+}
+
+.Quicklink{
+  font-size: larger;
+  color:wheat;
+  margin-top: 15px;
+}
+
+#shop:hover{
+  text-decoration: underline;
+  cursor: alias;
+  font-size: larger;
+}
+#aboutus:hover{
+  text-decoration: underline;
+  cursor: alias;
+  font-size: larger;
+}
+
+#Contact:hover{
+  text-decoration: underline;
+  cursor: alias;
+  font-size: larger;
+}
+
+#OurTeam:hover{
+  text-decoration: underline;
+  cursor: alias;
+  font-size: larger;
+}
+
+.Customersupport{
+  font-size: larger;
+  color:wheat;
+  margin-top: 15px;
+
+}
+
+#shippingreturns:hover{
+  text-decoration: underline;
+  cursor: alias;
+  font-size: larger;
+}
+
+#privacypolicy:hover{
+  text-decoration: underline;
+  cursor: alias;
+  font-size: larger;
+}
+
+#termsservices:hover{
+  text-decoration: underline;
+  cursor: alias;
+  font-size: larger;
+}
+
+
+.Followus{
+  font-size: larger;
+  color:wheat;
+  margin-top: 15px;
+
+}
+
+#facebook:hover{
+  text-decoration: underline;
+  cursor: alias;
+  font-size: larger;
+}
+
+#twitter:hover{
+  text-decoration: underline;
+  cursor: alias;
+  font-size: larger;
+}
+
+#instagram:hover{
+  text-decoration: underline;
+  cursor: alias;
+  font-size: larger;
+}
+
+#youtube:hover{
+  text-decoration: underline;
+  cursor: alias;
+  font-size: larger;
+}
+
+
+
