@@ -28,7 +28,9 @@ const DisplayItems = ({ category, setCategory }) => {
       ) : (
         <p>No items found for this category.</p>
       )}
-    
+       <button className="footer-panel1" onClick={() => setCategory("All")}>
+            Back to top
+      </button>
     </div>
   );
 };

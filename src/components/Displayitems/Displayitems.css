@@ -80,3 +80,14 @@
     align-items: center;
     justify-content: center;
 }
+ .footer-panel1{
+  margin-top: 20px;
+  background-color:#006A60;
+  color: #601E06;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.85rem;
+  width: 100%;
+ }
