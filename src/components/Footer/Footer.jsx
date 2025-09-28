@@ -15,6 +15,7 @@ function Footer() {
                   comfort, and confidence.</p>
               
             </ul>
+            
              <ul>
               <p className="Quicklink no-underline">Quick Links</p>
               <a href="/Shop" id="shop">Shop</a>
