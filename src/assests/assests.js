@@ -90,9 +90,11 @@ import repair from './repair.jpg'
 import veken from './veken.webp'
 import women1 from './women1.webp'
 import women2 from './women2.webp'
+import cross_icon from './cross_icon.png'
 
 
 export const assests = {
+  cross_icon,
   logo_1,
   location_logo,
   search_icon,

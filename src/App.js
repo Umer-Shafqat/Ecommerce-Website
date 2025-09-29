@@ -4,6 +4,7 @@ import Navbar1 from "./components/Navbar1/Navbar1";
 import MainBody from "./components/Mainbody/Mainbody";
 import DisplayItems from "./components/Displayitems/Displayitems";
 import Footer from "./components/Footer/Footer";
+import Signup from "./Pages/Signup/Signup";
 
 function App() {
   const [category, setCategory] = useState("All");
@@ -12,12 +13,12 @@ function App() {
     <>
       <Navbar />
       <Navbar1 />
-
       {category === "All" ? (
         <MainBody setCategory={setCategory} />
       ) : (
         <DisplayItems category={category} setCategory={setCategory} />
       )}
+      <Signup></Signup>
     <Footer></Footer>
 
     </>
