@@ -129,8 +129,6 @@ export const display_items =[
         price: 35.98,
         description: "Perricone MD High Potency Hyaluronic Intensive Body Therapy, 6 fl. oz.",
         category: "Health & Personal Care", 
-        detail:"",
-        stars:"",
   },
     {
         _id:"2",
