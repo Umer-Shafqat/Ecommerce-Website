@@ -1,8 +1,14 @@
 import React from 'react';
 import { assests } from '../../assests/assests';  // go up 2 folders
 import './Navbar.css';
+import { useState } from 'react';
+
+
 
 function Navbar() {
+
+   const [showLogin, setshowLogin] = useState(false);
+
   return (
     <>
     <div className="navbar-container">
@@ -25,9 +31,11 @@ function Navbar() {
 </div>
 
 
-<div className="signin">
-  <span><p>Hello,Sign in</p></span>
-</div>
+ <div className="signin" onClick={() => setshowLogin(true)}>
+          <span>
+            <p>Hello, Sign in</p>
+          </span>
+        </div>
 
 <div className="returns">
   <span><p>Returns</p></span>
@@ -38,8 +46,6 @@ function Navbar() {
  <img className="cart_icon" src={assests.cart_icon} alt="cart"/>
  <span><p className='cart-name'>Cart</p></span>
 </div>
-
-
 </div>
 
     </>
