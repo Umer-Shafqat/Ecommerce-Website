@@ -1,4 +1,3 @@
-// src/App.jsx
 import React, { useState } from "react";
 import { Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar/Navbar";
@@ -7,23 +6,23 @@ import MainBody from "./components/Mainbody/Mainbody";
 import DisplayItems from "./components/Displayitems/Displayitems";
 import Footer from "./components/Footer/Footer";
 import Signup from "./Pages/Signup/Signup";
+import IndividualDetail from "./Pages/IndividualDetail/IndividualDetail";
 
 function App() {
   const [category, setCategory] = useState("All");
 
   return (
     <>
-      {/* Navbar always visible */}
+      {/* Always visible navbars */}
       <Navbar />
       <Navbar1 />
-      
+
       <Routes>
-        {/* Main shop layout (default) */}
+        {/* Default main shop page */}
         <Route
           path="/"
           element={
             <>
-              
               {category === "All" ? (
                 <MainBody setCategory={setCategory} />
               ) : (
@@ -34,8 +33,11 @@ function App() {
           }
         />
 
-        {/* Signup page (opens when Signin is clicked) */}
+        {/* Signup page */}
         <Route path="/signup" element={<Signup />} />
+
+        {/* Individual product detail page */}
+        <Route path="/item/:id" element={<IndividualDetail />} />
       </Routes>
     </>
   );
