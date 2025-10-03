@@ -91,3 +91,8 @@
   font-size: 0.85rem;
   width: 100%;
  }
+
+.item-link {
+  text-decoration: none; /* removes underline from the link */
+  color: inherit;        /* optional: keeps text color same as normal text */
+}
