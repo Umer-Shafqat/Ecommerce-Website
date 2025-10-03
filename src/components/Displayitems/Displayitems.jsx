@@ -29,10 +29,7 @@ const DisplayItems = ({ category, setCategory }) => {
                   </p>
                 )}
                 <h3 className="item-name">{item.name}</h3>
-                {item.rating && (
-                  <p className="item-rating">⭐ {item.rating} / 5</p>
-                )}
-                <p className="item-price">${item.price}</p>
+              
               </div>
             </Link>
           ))}

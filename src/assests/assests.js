@@ -94,8 +94,10 @@ import cross_icon from './cross_icon.png'
 import remove_icon_red from './remove_icon_red.png'
 import add_icon_green from './add_icon_green.png'
 import add_icon from './add_icon.png'
+import rating_starts from './rating_starts.png'
 
 export const assests = {
+      rating_starts,
   remove_icon_red,
   add_icon_green,
   add_icon,
@@ -126,7 +128,7 @@ export const item_list = [
   { id: 8, box_name: "Warm & welcoming decor",  box_img: box8 },
 ];
 
-export const display_items =[
+export const display_items = [
   {
         _id:"1",
         name : "Perricone MD",
