@@ -91,9 +91,14 @@ import veken from './veken.webp'
 import women1 from './women1.webp'
 import women2 from './women2.webp'
 import cross_icon from './cross_icon.png'
-
+import remove_icon_red from './remove_icon_red.png'
+import add_icon_green from './add_icon_green.png'
+import add_icon from './add_icon.png'
 
 export const assests = {
+  remove_icon_red,
+  add_icon_green,
+  add_icon,
   cross_icon,
   logo_1,
   location_logo,
