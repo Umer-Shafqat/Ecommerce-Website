@@ -7,6 +7,7 @@ import DisplayItems from "./components/Displayitems/Displayitems";
 import Footer from "./components/Footer/Footer";
 import Signup from "./Pages/Signup/Signup";
 import IndividualDetail from "./Pages/IndividualDetail/IndividualDetail";
+import Dealpanel from "./components/Dealpanel/Dealpanel";
 
 function App() {
   const [category, setCategory] = useState("All");
@@ -14,9 +15,8 @@ function App() {
   return (
     <>
       <Navbar />
-
+      <Dealpanel />
       <Routes>
-
         <Route
           path="/"
           element={
@@ -33,7 +33,7 @@ function App() {
           }
         />
 
-      
+
         <Route path="/item/:id" element={<IndividualDetail />} />
         <Route path="/signup" element={<Signup />} />
       </Routes>

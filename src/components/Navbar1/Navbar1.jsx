@@ -5,9 +5,6 @@ function Navbar1() {
   return (
   <>
   <div className="navbar1-container">
-     <div className="paraforpanel">
-       <p>Welcome to our store! 🎉 Big sale today — Up to 50% OFF on selected items! 🚀</p>
-    </div>
     <div className="mainbody-pic">
         <img src={assests.mainpic} alt="Main pic"/>
     </div>
