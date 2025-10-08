@@ -1,6 +1,6 @@
 import { useParams, useNavigate } from "react-router-dom";
 import { useState } from "react"; 
-import { display_items } from "../../assests/assests";
+import { assests, display_items } from "../../assests/assests";
 import "./IndividualDetail.css";
 
 const IndividualDetail = () => {
@@ -38,6 +38,10 @@ const IndividualDetail = () => {
           <p className="detail-description">
             {item.description || "No description available."}
           </p>
+
+          <div className="rating">
+            <img src={assests.rating_starts} alt="Rating Stars" />
+          </div>
 
 <p className="add-counter-heading">Add Quantity</p>
 
