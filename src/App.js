@@ -13,31 +13,29 @@ function App() {
 
   return (
     <>
-      {/* Always visible navbars */}
       <Navbar />
-      <Navbar1 />
 
       <Routes>
-        {/* Default main shop page */}
+
         <Route
           path="/"
           element={
             <>
+            <Navbar1 />
               {category === "All" ? (
+
                 <MainBody setCategory={setCategory} />
               ) : (
-                <DisplayItems category={category} setCategory={setCategory} />
+                <DisplayItems category={category} setCategory={setCategory}/>
               )}
               <Footer />
             </>
           }
         />
 
-        {/* Signup page */}
-        <Route path="/signup" element={<Signup />} />
-
-        {/* Individual product detail page */}
+      
         <Route path="/item/:id" element={<IndividualDetail />} />
+        <Route path="/signup" element={<Signup />} />
       </Routes>
     </>
   );

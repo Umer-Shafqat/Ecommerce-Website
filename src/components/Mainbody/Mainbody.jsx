@@ -8,7 +8,7 @@ function MainBody({ setCategory }) {
         <div
           className="category-box"
           key={item.id}
-          onClick={() => setCategory(item.box_name)} // 🔥 switch category
+          onClick={() => setCategory(item.box_name)} 
         >
           <h3 className="box-title">{item.box_name}</h3>
           <img src={item.box_img} alt={item.box_name} className="box-img" />
