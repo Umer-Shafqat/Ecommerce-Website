@@ -1,48 +1,51 @@
-import { createContext } from "react"
-import { useState } from "react"
-import { food_list } from "../assets/assets"; 
+import { createContext, useState } from "react";
+import { display_items } from "../assests/assests"; // ✅ import your products
 
 export const StoreContext = createContext(null);
 
 const StoreContextProvider = (props) => {
-const [cartitems, setCartitems] = useState({});
+  const [cartitems, setCartitems] = useState({});
 
-const addToCart = (itemId) => {
-  if(!cartitems[itemId]){
-    setCartitems(prev => ({...prev, [itemId]: 1}))
-  }else{
-    setCartitems(prev => ({...prev, [itemId]: prev[itemId] + 1}))
-  }
-}
+  const addToCart = (itemId) => {
+    setCartitems((prev) => ({
+      ...prev,
+      [itemId]: (prev[itemId] || 0) + 1,
+    }));
+  };
 
-const removeFromCart = (itemId) => {
-    setCartitems(prev => ({...prev, [itemId]: prev[itemId] - 1}))
-  }
+  const removeFromCart = (itemId) => {
+    setCartitems((prev) => {
+      const updated = { ...prev };
+      if (updated[itemId] > 1) updated[itemId]--;
+      else delete updated[itemId];
+      return updated;
+    });
+  };
 
-const getTotalCartAmount = () => {
-    let totalAmount = 0;
-    for(const item in cartitems){
-      if(cartitems[item] > 0){
-      let itemInfo = food_list.find((product) => product._id === item);
-        totalAmount += cartitems[item] * itemInfo.price;
+  const getTotalCartAmount = () => {
+    let total = 0;
+    for (const item in cartitems) {
+      if (cartitems[item] > 0) {
+        const itemInfo = display_items.find((p) => p._id === item);
+        if (itemInfo) total += cartitems[item] * itemInfo.price;
       }
     }
-    return totalAmount;
-}
+    return total;
+  };
 
-    const contextValue = {
-      food_list,
-      cartitems,
-      addToCart,
-      removeFromCart,
-      getTotalCartAmount
-    }
-    
-    return (
-        <StoreContext.Provider value={contextValue}>
-            {props.children}
-        </StoreContext.Provider>
-    )
-}
+  const contextValue = {
+    display_items,
+    cartitems,
+    addToCart,
+    removeFromCart,
+    getTotalCartAmount,
+  };
+
+  return (
+    <StoreContext.Provider value={contextValue}>
+      {props.children}
+    </StoreContext.Provider>
+  );
+};
 
 export default StoreContextProvider;

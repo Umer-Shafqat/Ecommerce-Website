@@ -1,10 +1,10 @@
 import { useContext } from "react";
 import "./Cart.css";
 import { useNavigate } from "react-router-dom";
-import { StoreContext } from "../../context/StoreContext";
+import { StoreContext } from "../../Context/StoreContext";
 
 const Cart = () => {
-  const { cartitems, items_list, removeFromCart, getTotalCartAmount } =
+  const { cartitems, display_items, removeFromCart, getTotalCartAmount } =
     useContext(StoreContext);
 
   const navigate = useNavigate();
@@ -22,17 +22,20 @@ const Cart = () => {
         </div>
         <hr />
 
-        {items_list.map((item, index) => {
-          if (cartitems[item.id] > 0) {
+        {display_items.map((item, index) => {
+          if (cartitems[item._id] > 0) {
             return (
               <div key={index}>
                 <div className="cart-items-title cart-items-item">
                   <img src={item.image} alt={item.name} />
                   <p>{item.name}</p>
                   <p>${item.price}</p>
-                  <p>{cartitems[item.id]}</p>
-                  <p>${item.price * cartitems[item.id]}</p>
-                  <p className="cross" onClick={() => removeFromCart(item.id)}>
+                  <p>{cartitems[item._id]}</p>
+                  <p>${(item.price * cartitems[item._id]).toFixed(2)}</p>
+                  <p
+                    className="cross"
+                    onClick={() => removeFromCart(item._id)}
+                  >
                     ✕
                   </p>
                 </div>
@@ -50,7 +53,7 @@ const Cart = () => {
           <div>
             <div className="cart-total-details">
               <p>Sub Total</p>
-              <p>${getTotalCartAmount()}</p>
+              <p>${getTotalCartAmount().toFixed(2)}</p>
             </div>
             <hr className="hr" />
             <div className="cart-total-details">
@@ -61,9 +64,10 @@ const Cart = () => {
             <div className="cart-total-details">
               <b>Total</b>
               <b>
-                ${getTotalCartAmount() === 0
+                $
+                {getTotalCartAmount() === 0
                   ? 0
-                  : getTotalCartAmount() + 6}
+                  : (getTotalCartAmount() + 6).toFixed(2)}
               </b>
             </div>
           </div>

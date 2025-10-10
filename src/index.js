@@ -1,11 +1,11 @@
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import ReactDOM from "react-dom/client";
+import "./index.css";
+import App from "./App";
+import reportWebVitals from "./reportWebVitals";
 import { HashRouter } from "react-router-dom";
-import StoreContextProvider from './components/Context/StoreContext'; // ✅ fixed path
+import StoreContextProvider from "./Context/StoreContext"; // ✅ Correct path
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <HashRouter>
     <StoreContextProvider>

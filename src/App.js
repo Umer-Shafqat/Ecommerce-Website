@@ -8,7 +8,7 @@ import Footer from "./components/Footer/Footer";
 import Signup from "./Pages/Signup/Signup";
 import IndividualDetail from "./Pages/IndividualDetail/IndividualDetail";
 import Dealpanel from "./components/Dealpanel/Dealpanel";
-import Cart from "./components/Cart/Cart"; // ✅ must match folder + file name
+import Cart from "./Pages/Cart/Cart"; // ✅ Cart is inside components
 
 function App() {
   const [category, setCategory] = useState("All");
@@ -17,6 +17,7 @@ function App() {
     <>
       <Navbar />
       <Dealpanel />
+
       <Routes>
         <Route
           path="/"
@@ -34,7 +35,7 @@ function App() {
         />
         <Route path="/item/:id" element={<IndividualDetail />} />
         <Route path="/signup" element={<Signup />} />
-        <Route path="/cart" element={<Cart />} />
+        <Route path="/Cart" element={<Cart />} /> {/* ✅ Added Cart route */}
       </Routes>
     </>
   );

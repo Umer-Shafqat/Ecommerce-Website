@@ -48,7 +48,7 @@ function Navbar() {
       </div>
 
       {/* Cart */}
-      <div className="cart">
+      <div className="cart" onClick={() => navigate("/Cart")}>
         <img className="cart_icon" src={assests.cart_icon} alt="cart" />
         <span>
           <p className="cart-name">Cart</p>
